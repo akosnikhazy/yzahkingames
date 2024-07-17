@@ -1,2 +1,2 @@
 # yzahkingames
-games by yzahkin
+repo for this site: https://yzahkin.games
