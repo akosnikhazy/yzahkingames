@@ -39,7 +39,24 @@ a{
 a:hover{
 	text-decoration:underline;
 }
-
+#social{
+	position:absolute;
+	top: 5px;
+	right: 5px;
+}
+#bsky{
+	color: #0D63BE
+}
+#x{
+	color: #cdcdcd;
+}
+#social a{
+	display:inline-block;
+	width: 45px;
+	height: 45px;
+	margin-right:10px;
+	
+}
 #sitetitle{
 	color: #F2F2F2;	
 }
