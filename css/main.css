@@ -62,7 +62,7 @@ a:hover{
 }
 #steamcont{
 	width: 100%;
-	background-image: url("media/elements/blure-screenshot-bg.jpg");
+	background-image: url("media/elements/blure-screenshot-bg.webp");
 	text-align:center;
 	padding: 30px;
 	margin-bottom: 10px;
