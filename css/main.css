@@ -1,11 +1,10 @@
 *{box-sizing: border-box;}
 html,body{padding:0;width:100%;height:100%;margin:0;}
 html{
-	background:#222831;
-	background-image:url("media/elements/pig-bg.webp");
+	background:#F593D3;
 	background-repeat:no-repeat;
 	background-position: bottom right;
-	color:#F2F2F2;
+	color:#333;
 	font-family: Inter,Helvetica,Arial,sans-serif;
 	scrollbar-width: thin;
 	line-height: 1.5;
@@ -16,13 +15,16 @@ div:not(#steamcont),article{
 	margin: 0 auto;
 }
 article{
-   
-	background:#393E46;
+	border-top: 1px solid #333;
+	border-right: 1px solid #333;
+	box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+	background:#F9F0C1;
 	padding:10px;
 	text-align: justify;
 	-webkit-border-radius: 4px 4px 4px 4px;
-	border-radius: 4px 4px 4px 4px;}
-
+	border-radius: 4px 4px 4px 4px;
+	margin-bottom:100px;
+}
 footer{
 	text-align: center;
 	position: fixed;
@@ -32,7 +34,7 @@ footer{
 	
 }
 a{
-	color:#F96D00;
+	color:#666;
 	text-decoration:none;
 }
 
@@ -58,7 +60,7 @@ a:hover{
 	
 }
 #sitetitle{
-	color: #F2F2F2;	
+	color: #333;	
 }
 #steamcont{
 	width: 100%;
@@ -70,7 +72,29 @@ a:hover{
 	background-position: center;
 	background-size: cover;
 }
-
+#marks{
+	position:fixed;
+	top:500px;
+	left: 20px;
+	width: 350px;
+	height: 500px;
+	z-index:-1000;
+}
+.mark{
+	position: absolute;
+	top:50px;
+	-webkit-border-radius: 1000px;
+	border-radius: 1000px;
+	background:#EF58BC;
+	width:210px;
+	height: 210px;
+}
+.marksmall{
+	right: 10px;
+	top:300px;
+	width: 100px!important;
+	height: 100px!important;
+}
 #navitems a{
 	display: inline-block;
 	padding:15px;
@@ -103,6 +127,7 @@ a:hover{
 	display:block;
 	margin:10px auto;
 	width: 150px;
+	background:#F9C1E6;
 	-webkit-border-radius: 20px 20px 20px 20px;
 	border-radius: 20px 20px 20px 20px;
 	padding: 10px;
