@@ -33,6 +33,9 @@ footer{
 	width:100%;
 	
 }
+footer a{
+	color:#F593D3
+}
 a{
 	color:#666;
 	text-decoration:none;
