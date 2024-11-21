@@ -4,9 +4,15 @@
     box-sizing: border-box;    
 }
 
+:root {
+    --text-color: #F2F2F2;
+    --content-color:#393E46;
+    --nice-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
 html{
     background:#222831;
-    color: #F2F2F2;
+    color:var(--text-color);
     font-family: Inter, Helvetica, Arial, sans-serif;
 }
 
@@ -15,7 +21,7 @@ article{
     margin: 20px auto;
     margin-bottom: 20px;
     padding:10px 30px;
-    background: #393E46;
+    background:  var(--content-color);
     -webkit-border-radius: 4px 4px 4px 4px;
     font-size: .95rem;
     text-align: justify;
@@ -32,7 +38,8 @@ a{
     text-decoration: none;
 }
 nav{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    box-shadow:var(--nice-shadow);
+   
 }
 
 nav ul{
@@ -41,7 +48,7 @@ nav ul{
 
 nav ul li{
     display:block;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 nav a{
@@ -52,11 +59,72 @@ nav a{
     -webkit-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px;
 }
+
 nav ul li a:active{
 
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-shadow:var(--nice-shadow)
 }
+
 #postedat{
     opacity: 0.7;
     font-size: 12px;
+}
+
+#container{
+   max-width:1000px;
+   display:flex;
+   justify-content: flex-start; 
+   
+  
+}
+
+#posts{
+    box-shadow:var(--nice-shadow);
+    padding: 20px;
+    max-width: 650px;
+}
+
+.post{
+    background: #393E46
+}
+
+.post span{
+    display:block;
+}
+
+.post .posttitle{
+    color:var(--text-color);
+    font-weight:777;
+    font-size:1.1rem;
+
+}
+
+.post .posttime{
+    color:var(--text-color);
+    opacity:0.7;
+    font-size: 0.8rem
+}
+
+.post .postfirstparagraph{
+    color: var(--text-color);
+    padding-left:5px;
+}
+
+.post .postreadmore{
+    width:100%;
+    font-size:0.8rem;
+    text-align:right;
+}
+
+#container h1{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-family:monospace;
+    
+}
+
+#blogtitle,nav{
+    align-self: flex-start;
+    position:sticky;
+    top:10px;
 }
