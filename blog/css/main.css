@@ -128,3 +128,6 @@ nav ul li a:active{
     position:sticky;
     top:10px;
 }
+#rss img{
+    width:15px;
+}
