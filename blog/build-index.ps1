@@ -9,7 +9,6 @@ $HTMLOutput = "index.html"
 $RSSOutput = "rss.xml"
 $SitemapOutput = "sitemap.xml"
 
-
 $HTMLtemplateContent = Get-Content -Path $HTMLtemplatePath -Raw
 $RSStemplateContent = Get-Content -Path $RSStemplatePath -Raw
 $SitemaptemplateContent = Get-Content -Path $SitemaptemplatePath -Raw
@@ -44,8 +43,6 @@ foreach ($htmlFile in $htmlFiles) {
     if ($htmlContent -match '<p>(.*?)</p>') {
         $pText = $matches[1]
     }
-
-
 
     $relativePath = "$containingFolder/$htmlFile"
 
