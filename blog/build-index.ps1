@@ -58,7 +58,8 @@ foreach ($htmlFile in $htmlFiles) {
     $sha256 = [System.Security.Cryptography.SHA256]::Create()
     $guid =  [BitConverter]::ToString($sha256.ComputeHash([System.Text.Encoding]::UTF8.GetBytes($h1Text + $containingFolder + $relativePath))) -replace '-'
 
-    $RSSListContent += '<item><guid isPermaLink="false">' + $guid + '</guid><title>' + $h1Text + '</title><link>https://yzahkin.games/blog/posts/' + $relativePath + '</link><description>' + $pText + '</description></item>'
+    $pText = $pText -replace '<[^>]*>', ''
+    $RSSListContent += '<item><guid isPermaLink="false">' + $guid + '</guid><title>' + $h1Text + '</title><link>https://yzahkin.games/blog/posts/' + $relativePath + '</link><description>' + $pText + '</description></item>' 
 
     $SitemapListContent += "<url><loc>https://yzahkin.games/blog/posts/$containingFolder</loc><lastmod>$containingFolder</lastmod></url>"
 
