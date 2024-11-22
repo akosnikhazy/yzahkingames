@@ -46,7 +46,7 @@ foreach ($htmlFile in $htmlFiles) {
 
     $relativePath = "$containingFolder/$htmlFile"
 
-    $postText = $postContent;
+    $postText = $postContent
 
     $postText = $postText -replace "\{\{path\}\}",$relativePath
     $postText = $postText -replace "\{\{title\}\}", $h1Text
