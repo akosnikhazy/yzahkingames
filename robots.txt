@@ -2,3 +2,4 @@ User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
 Sitemap: https://yzahkin.games/sitemap.xml
+bytheway: I do not believe robots.txt is actually respected anymore and that makes me sad
