@@ -131,3 +131,18 @@ nav ul li a:active{
 #rss img{
     width:15px;
 }
+#social{
+	position:absolute;
+	top: 5px;
+	right: 5px;
+}
+#social a{
+	display:inline-block;
+	width: 45px;
+	height: 45px;
+	margin-right:10px;
+	
+}
+#bsky{
+	color: #0D63BE
+}
