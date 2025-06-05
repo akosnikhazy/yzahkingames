@@ -1,4 +1,3 @@
-
 *{
     scrollbar-width: thin;
     box-sizing: border-box;    
@@ -74,14 +73,13 @@ nav ul li a:active{
    max-width:1000px;
    display:flex;
    justify-content: flex-start; 
-   
-  
 }
 
 #posts{
     box-shadow:var(--nice-shadow);
     padding: 20px;
     max-width: 650px;
+	min-width: 300px;
 }
 
 .post{
